@@ -58,12 +58,12 @@
     </div>
 
     <h3>Title Disguiser (For this page)</h3>
-    <input type="text" class="titler">
+    <input type="text" class="titler" id="titleInput">
     <button onclick="changeTitle()" class="titler">OK</button>
 
     <script>
         function changeTitle() {
-          var newText = document.getElementByClassName('input.titler').value;
+          var newText = document.getElementById('titleInput').value;
           document.title = newText;
         }
     </script>
