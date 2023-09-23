@@ -6,7 +6,17 @@
     <title>Your Website Title</title>
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple HTML page.</p>
+    <div class="header">
+      <h1>codey-games.github.io</h1>
+      <p>Where Codey stores random junk</p>
+    </div>
+
+    <div class="contents">
+      <br>
+      <h3>Bookmarklets (Drag to bookmarks bar)</h3> 
+      <a class="link1" href="javascript:(function(){var url=prompt('Enter the URL:');if(url){var win;function openWindow(){if(win){win.focus();}else{win=window.open();if(!win){alert('Please disable your pop-up blocker for this site to use this bookmarklet.');return;}win.document.body.style.margin='0';win.document.body.style.height='100vh';var iframe=win.document.createElement('iframe');iframe.style.border='none';iframe.style.width='100%';iframe.style.height='100%';iframe.style.margin='0';iframe.src=url;win.document.body.appendChild(iframe);var interval=setInterval(function(){if(win.closed){clearInterval(interval);win=undefined;}},500);}}openWindow();}})();">
+          <img src="https://codey-games.github.io/world-wide-web.png">
+      </a>
+    </div>
 </body>
 </html>
