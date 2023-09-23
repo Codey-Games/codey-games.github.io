@@ -22,15 +22,18 @@
             filter: invert(100%);
         }
 
-        input[type="text"], button {
+        .titler {
       background-color: #444;
       color: #fff;
       border: none;
-      padding: 10px;
       margin: 10px;
       border-radius: 5px;
+      padding: 0; /* Remove padding */
     }
-    button {
+    .titler:focus {
+      outline: none; /* Remove outline on focus */
+    }
+    button.titler {
       cursor: pointer;
     }
     </style>
@@ -50,8 +53,8 @@
         <br><br><br>
     </div>
     <h3>Webpage URL Hider</h3>
-    <input type="text" id="textBox">
-  <button onclick="changeTitle()">OK</button>
+    <input type="text" id="textBox" class="titler">
+  <button onclick="changeTitle()" class="titler">OK</button>
 
   <script>
     function changeTitle() {
