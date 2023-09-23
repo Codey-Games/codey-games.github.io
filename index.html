@@ -18,5 +18,14 @@
           <img src="https://codey-games.github.io/world-wide-web.png">
       </a>
     </div>
+    <input type="text" id="textBox">
+  <button onclick="changeTitle()">OK</button>
+
+  <script>
+    function changeTitle() {
+      var newText = document.getElementById('textBox').value;
+      document.title = newText;
+    }
+  </script>
 </body>
 </html>
