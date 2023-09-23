@@ -68,5 +68,27 @@
           document.title = newText;
         }
     </script>
+
+
+    <h3>Favicon Changer</h3>
+    <input type="text" class="titler" id="faviconInput" placeholder="Enter Favicon URL">
+    <button onclick="changeFavicon()" class="titler">OK</button>
+
+    <script>
+        function changeFavicon() {
+            var newFaviconUrl = document.getElementById('faviconInput').value;
+
+            if (newFaviconUrl) {
+                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.type = 'image/png';
+                link.rel = 'icon';
+                link.href = newFaviconUrl;
+                document.getElementsByTagName('head')[0].appendChild(link);
+
+                // Set the SameSite and Secure attributes for the favicon cookie
+                document.cookie = "faviconCookie=updated; SameSite=None; Secure";
+            }
+        }
+    </script>
 </body>
 </html>
