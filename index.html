@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Unnamed Page</title>
@@ -21,52 +23,49 @@
         }
 
         .titler {
-  background-color: #444;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  margin: 10px;
-}
+            background-color: #444;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+        }
 
-input.titler {
-  margin-right: 0;
-border-radius: 100px 5px 5px 100px;
-}
+        input.titler {
+            margin-right: 0;
+            border-radius: 100px 5px 5px 100px;
+        }
 
-button.titler {
-  cursor: pointer;
-  margin-left: 0;
-border-radius: 5px 100px 100px 5px;
-}
-
-</style>
+        button.titler {
+            cursor: pointer;
+            margin-left: 0;
+            border-radius: 5px 100px 100px 5px;
+        }
+    </style>
 </head>
 <body>
     <div class="header">
-      <h1>codey-games.github.io</h1>
-      <p>Where Codey stores random junk</p>
+        <h1>codey-games.github.io</h1>
+        <p>Where Codey stores random junk</p>
     </div>
 
     <div class="contents">
-      <br>
-      <h3>URL Disguiser</h3> 
-      <a class="link1" href="javascript:(function(){var url=prompt('Enter the URL:');if(url){var win;function openWindow(){if(win){win.focus();}else{win=window.open();if(!win){alert('Please disable your pop-up blocker for this site to use this bookmarklet.');return;}win.document.body.style.margin='0';win.document.body.style.height='100vh';var iframe=win.document.createElement('iframe');iframe.style.border='none';iframe.style.width='100%';iframe.style.height='100%';iframe.style.margin='0';iframe.src=url;win.document.body.appendChild(iframe);var interval=setInterval(function(){if(win.closed){clearInterval(interval);win=undefined;}},500);}}openWindow();}})();">
-          <img src="https://codey-games.github.io/world-wide-web.png" class="web">
-      </a>
+        <br>
+        <h3>URL Disguiser</h3> 
+        <a class="link1" href="javascript:(function(){var url=prompt('Enter the URL:');if(url){var win;function openWindow(){if(win){win.focus();}else{win=window.open();if(!win){alert('Please disable your pop-up blocker for this site to use this bookmarklet.');return;}win.document.body.style.margin='0';win.document.body.style.height='100vh';var iframe=win.document.createElement('iframe');iframe.style.border='none';iframe.style.width='100%';iframe.style.height='100%';iframe.style.margin='0';iframe.src=url;win.document.body.appendChild(iframe);var interval=setInterval(function(){if(win.closed){clearInterval(interval);win=undefined;}},500);}}openWindow();}})();">
+            <img src="https://codey-games.github.io/world-wide-web.png" class="web">
+        </a>
         <br><br><br>
     </div>
 
-    
     <h3>Webpage URL Hider</h3>
     <input type="text" class="titler">
     <button onclick="changeTitle()" class="titler">OK</button>
 
     <script>
         function changeTitle() {
-          var newTitle = document.getElementById('textBox').value;
-          document.title = newTitle;
-    }
-  </script>
-
-    
-</body></html>
+            var newTitle = document.getElementById('textBox').value;
+            document.title = newTitle;
+        }
+    </script>
+</body>
+</html>
