@@ -45,6 +45,15 @@
         .bookmarks {
             display: inline-block;
         }
+
+        h3.links {
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+
+        p.links {
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>
@@ -72,7 +81,7 @@
     </div>
 
     <div>
-    <h3>Title Disguiser (For this page)</h3>
+    <h3 class="links">Title Disguiser (For this page)</h3>
     <input type="text" class="titler" id="titleInput" placeholder="Enter new Title">
     <button onclick="changeTitle()" class="titler">OK</button>
 
@@ -86,8 +95,8 @@
 
 
     <div>
-    <h3>Favicon Changer</h3>
-    <p>(Right-click an image, then click 'Copy Image Address')</p>
+    <h3 class="links">Favicon Changer</h3>
+    <p class="links">(Right-click an image, then click 'Copy Image Address')</p>
     <input type="text" class="titler" id="faviconInput" placeholder="Enter Image Address">
     <button onclick="changeFavicon()" class="titler">OK</button>
 
