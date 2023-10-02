@@ -41,6 +41,10 @@
             border-radius: 5px 100px 100px 5px;
             padding-right: 15px;
         }
+
+        .bookmarks {
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -51,15 +55,19 @@
 
     <div class="contents">
         <br>
-        <h3>URL Hider</h3>
-        <a class="link1" href="javascript:(function(){var url=prompt('Enter the URL:');if(url){var win;function openWindow(){if(win){win.focus();}else{win=window.open();if(!win){alert('Please disable your pop-up blocker for this site to use this bookmarklet.');return;}win.document.body.style.margin='0';win.document.body.style.height='100vh';var iframe=win.document.createElement('iframe');iframe.style.border='none';iframe.style.width='100%';iframe.style.height='100%';iframe.style.margin='0';iframe.src=url;win.document.body.appendChild(iframe);var interval=setInterval(function(){if(win.closed){clearInterval(interval);win=undefined;}},500);}}openWindow();}})();">
-            <img src="https://codey-games.github.io/world-wide-web.png" class="web">
-        </a>
+        <div class="bookmarks">
+            <h3>URL Hider</h3>
+            <a class="link1" href="javascript:(function(){var url=prompt('Enter the URL:');if(url){var win;function openWindow(){if(win){win.focus();}else{win=window.open();if(!win){alert('Please disable your pop-up blocker for this site to use this bookmarklet.');return;}win.document.body.style.margin='0';win.document.body.style.height='100vh';var iframe=win.document.createElement('iframe');iframe.style.border='none';iframe.style.width='100%';iframe.style.height='100%';iframe.style.margin='0';iframe.src=url;win.document.body.appendChild(iframe);var interval=setInterval(function(){if(win.closed){clearInterval(interval);win=undefined;}},500);}}openWindow();}})();">
+                <img src="https://codey-games.github.io/world-wide-web.png" class="web">
+            </a>
+        </div>
 
-        <h3>Tab Disguiser</h3>
-        <a class="link1" href="javascript:(function(){const t=prompt("Enter a new title for your page:");if(t!==null){document.title=t;const f=prompt("Enter an Image Address (for the tab icon):");if(f!==null){if(f){const l=document.querySelector("link[rel*='icon']")||document.createElement('link');l.type='image/png';l.rel='icon';l.href=f;document.getElementsByTagName('head')[0].appendChild(l);document.cookie="faviconCookie=updated; SameSite=None; Secure";alert("Thank you for using my Hider Tool! If something breaks, then please add an issue to the GitHub Repository!");}else{alert("No Image Address Detected!");}}else{alert("Icon Update Failed!");}}else{alert("Title Update Failed!");}})();">
-            <img src="https://codey-games.github.io/world-wide-web.png" class="web">
-        </a>
+        <div class="bookmarks">
+            <h3>Tab Disguiser</h3>
+            <a class="link1" href="javascript:(function(){const t=prompt("Enter a new title for your page:");if(t!==null){document.title=t;const f=prompt("Enter an Image Address (for the tab icon):");if(f!==null){if(f){const l=document.querySelector("link[rel*='icon']")||document.createElement('link');l.type='image/png';l.rel='icon';l.href=f;document.getElementsByTagName('head')[0].appendChild(l);document.cookie="faviconCookie=updated; SameSite=None; Secure";alert("Thank you for using my Hider Tool! If something breaks, then please add an issue to the GitHub Repository!");}else{alert("No Image Address Detected!");}}else{alert("Icon Update Failed!");}}else{alert("Title Update Failed!");}})();">
+                <img src="https://codey-games.github.io/world-wide-web.png" class="web">
+            </a>
+        </div>
         <br><br><br>
     </div>
 
